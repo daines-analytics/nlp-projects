@@ -14261,9 +14261,9 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Text-Classification-Model-for-Disaster-Tweets-Classification-Using-TensorFlow-Take-1">Text Classification Model for Disaster Tweets Classification Using TensorFlow Take 1<a class="anchor-link" href="#Text-Classification-Model-for-Disaster-Tweets-Classification-Using-TensorFlow-Take-1">&#182;</a></h1><h3 id="David-Lowe">David Lowe<a class="anchor-link" href="#David-Lowe">&#182;</a></h3><h3 id="February-12,-2021">February 12, 2021<a class="anchor-link" href="#February-12,-2021">&#182;</a></h3><p>Template Credit: Adapted from a template made available by Dr. Jason Brownlee of Machine Learning Mastery. [<a href="https://machinelearningmastery.com/">https://machinelearningmastery.com/</a>]</p>
 <p>SUMMARY: This project aims to construct a text classification model using a neural network and document the end-to-end steps using a template. The Disaster Tweets Classification dataset is a binary classification situation where we attempt to predict one of the two possible outcomes.</p>
-<p>INTRODUCTION: Twitter has become an important communication channel in times of emergency. The ubiquitousness of smartphones enables people to announce an emergency they are observing in real-time. Because of this, more agencies are interested in programmatically monitoring Twitter. In this practice Kaggle competition, we want to build a machine learning model that predicts which Tweets are about real disasters and which ones are not. This dataset was created by Figure-Eight and shared initially on their 'Data for Everyone' website.</p>
+<p>INTRODUCTION: Twitter has become an important communication channel in times of emergency. The ubiquitous nature of smartphones enables people to announce an emergency they are observing in real-time. Because of this, more agencies are interested in programmatically monitoring Twitter. In this practice Kaggle competition, we want to build a machine learning model that predicts which Tweets are about real disasters and which ones are not. This dataset was created by Figure-Eight and shared initially on their 'Data for Everyone' website.</p>
 <p>In this Take1 iteration, we will deploy a bag-of-words model to classify the Tweets. We will also make predictions on Kaggle's test dataset and submit the results for evaluation.</p>
-<p>ANALYSIS: In this Take1 iteration, the bag-of-words model's performance achieved an average accuracy score of 76.25% after 20 epochs with five iterations of cross-validation. Furthermore, the final model processed the test dataset with an accuracy measurement of 75.20%.</p>
+<p>ANALYSIS: In this Take1 iteration, the bag-of-words model's performance achieved an average accuracy score of 75.49% after 20 epochs with five iterations of cross-validation. Furthermore, the final model processed the test dataset with an accuracy measurement of 75.02%.</p>
 <p>CONCLUSION: In this modeling iteration, the bag-of-words TensorFlow model appeared to be suitable for modeling this dataset. We should consider experimenting with TensorFlow for further modeling.</p>
 <p>Dataset Used: Sentiment Labelled Sentences</p>
 <p>Dataset ML Model: Binary class text classification with text-oriented features</p>
@@ -14471,62 +14471,60 @@ a.anchor-link {
 [nltk_data]    | 
 [nltk_data]    | Downloading package cmudict to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package cmudict is already up-to-date!
+[nltk_data]    |   Unzipping corpora/cmudict.zip.
 [nltk_data]    | Downloading package gazetteers to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package gazetteers is already up-to-date!
+[nltk_data]    |   Unzipping corpora/gazetteers.zip.
 [nltk_data]    | Downloading package genesis to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package genesis is already up-to-date!
+[nltk_data]    |   Unzipping corpora/genesis.zip.
 [nltk_data]    | Downloading package gutenberg to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package gutenberg is already up-to-date!
+[nltk_data]    |   Unzipping corpora/gutenberg.zip.
 [nltk_data]    | Downloading package inaugural to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package inaugural is already up-to-date!
+[nltk_data]    |   Unzipping corpora/inaugural.zip.
 [nltk_data]    | Downloading package movie_reviews to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package movie_reviews is already up-to-date!
+[nltk_data]    |   Unzipping corpora/movie_reviews.zip.
 [nltk_data]    | Downloading package names to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package names is already up-to-date!
+[nltk_data]    |   Unzipping corpora/names.zip.
 [nltk_data]    | Downloading package shakespeare to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package shakespeare is already up-to-date!
+[nltk_data]    |   Unzipping corpora/shakespeare.zip.
 [nltk_data]    | Downloading package stopwords to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package stopwords is already up-to-date!
+[nltk_data]    |   Unzipping corpora/stopwords.zip.
 [nltk_data]    | Downloading package treebank to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package treebank is already up-to-date!
+[nltk_data]    |   Unzipping corpora/treebank.zip.
 [nltk_data]    | Downloading package twitter_samples to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package twitter_samples is already up-to-date!
+[nltk_data]    |   Unzipping corpora/twitter_samples.zip.
 [nltk_data]    | Downloading package omw to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package omw is already up-to-date!
+[nltk_data]    |   Unzipping corpora/omw.zip.
 [nltk_data]    | Downloading package wordnet to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package wordnet is already up-to-date!
+[nltk_data]    |   Unzipping corpora/wordnet.zip.
 [nltk_data]    | Downloading package wordnet_ic to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package wordnet_ic is already up-to-date!
+[nltk_data]    |   Unzipping corpora/wordnet_ic.zip.
 [nltk_data]    | Downloading package words to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package words is already up-to-date!
+[nltk_data]    |   Unzipping corpora/words.zip.
 [nltk_data]    | Downloading package maxent_ne_chunker to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package maxent_ne_chunker is already up-to-date!
+[nltk_data]    |   Unzipping chunkers/maxent_ne_chunker.zip.
 [nltk_data]    | Downloading package punkt to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package punkt is already up-to-date!
+[nltk_data]    |   Unzipping tokenizers/punkt.zip.
 [nltk_data]    | Downloading package snowball_data to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package snowball_data is already up-to-date!
 [nltk_data]    | Downloading package averaged_perceptron_tagger to
 [nltk_data]    |     /home/pythonml/nltk_data...
-[nltk_data]    |   Package averaged_perceptron_tagger is already up-
-[nltk_data]    |       to-date!
+[nltk_data]    |   Unzipping taggers/averaged_perceptron_tagger.zip.
 [nltk_data]    | 
 [nltk_data]  Done downloading collection popular
 </pre>
@@ -15100,7 +15098,7 @@ The top 50 words in the vocabulary:
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># keep tokens with a min occurrence</span>
-<span class="n">min_occurane</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">min_occurane</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">tokens</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">c</span> <span class="ow">in</span> <span class="n">vocab</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">c</span> <span class="o">&gt;=</span> <span class="n">min_occurane</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The number of words with the minimum appearance:&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokens</span><span class="p">))</span>
 </pre></div>
@@ -15122,7 +15120,7 @@ The top 50 words in the vocabulary:
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The number of words with the minimum appearance: 7535
+<pre>The number of words with the minimum appearance: 20932
 </pre>
 </div>
 </div>
@@ -15187,9 +15185,9 @@ The top 50 words in the vocabulary:
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load the vocabulary</span>
 <span class="n">vocab_filename</span> <span class="o">=</span> <span class="s1">&#39;vocabulary.txt&#39;</span>
-<span class="n">vocab</span> <span class="o">=</span> <span class="n">load_doc</span><span class="p">(</span><span class="n">vocab_filename</span><span class="p">)</span>
-<span class="n">vocab</span> <span class="o">=</span> <span class="n">vocab</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
-<span class="n">vocab</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">vocab</span><span class="p">)</span>
+<span class="n">vocab_text</span> <span class="o">=</span> <span class="n">load_doc</span><span class="p">(</span><span class="n">vocab_filename</span><span class="p">)</span>
+<span class="n">vocab_words</span> <span class="o">=</span> <span class="n">vocab_text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="n">vocab</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">vocab_words</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of tokens in the vocabulary:&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">vocab</span><span class="p">))</span>
 </pre></div>
 
@@ -15210,7 +15208,7 @@ The top 50 words in the vocabulary:
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Number of tokens in the vocabulary: 7535
+<pre>Number of tokens in the vocabulary: 20932
 </pre>
 </div>
 </div>
@@ -15269,7 +15267,7 @@ The top 50 words in the vocabulary:
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
@@ -15277,11 +15275,33 @@ The top 50 words in the vocabulary:
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load all training cases</span>
 <span class="n">training_docs</span> <span class="o">=</span> <span class="n">process_comments_to_lines</span><span class="p">(</span><span class="n">X_train_df</span><span class="p">,</span> <span class="n">vocab</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of comments processed:&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">training_docs</span><span class="p">))</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Number of comments processed: 7613
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -15356,7 +15376,7 @@ The top 50 words in the vocabulary:
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The shape of the encoded training dataset: (7613, 5760)
+<pre>The shape of the encoded training dataset: (7613, 16977)
 </pre>
 </div>
 </div>
@@ -15457,13 +15477,11 @@ The top 50 words in the vocabulary:
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define the baseline model for benchmarking</span>
-<span class="k">def</span> <span class="nf">create_nn_model</span><span class="p">(</span><span class="n">n_inputs</span><span class="o">=</span><span class="n">num_inputs</span><span class="p">,</span> <span class="n">n_outputs</span><span class="o">=</span><span class="n">num_outputs</span><span class="p">,</span> <span class="n">layer1_nodes</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">layer1_dropout</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">layer2_nodes</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> <span class="n">layer2_dropout</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> 
+<span class="k">def</span> <span class="nf">create_nn_model</span><span class="p">(</span><span class="n">n_inputs</span><span class="o">=</span><span class="n">num_inputs</span><span class="p">,</span> <span class="n">n_outputs</span><span class="o">=</span><span class="n">num_outputs</span><span class="p">,</span> <span class="n">layer1_nodes</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">layer2_nodes</span><span class="o">=</span><span class="mi">32</span><span class="p">,</span> 
                     <span class="n">opt_param</span><span class="o">=</span><span class="n">DEFAULT_OPTIMIZER</span><span class="p">,</span> <span class="n">init_param</span><span class="o">=</span><span class="n">DEFAULT_INITIALIZER</span><span class="p">,</span> <span class="n">loss_param</span><span class="o">=</span><span class="n">DEFAULT_LOSS</span><span class="p">,</span> <span class="n">metrics_param</span><span class="o">=</span><span class="n">DEFAULT_METRICS</span><span class="p">):</span>
     <span class="n">nn_model</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">Sequential</span><span class="p">([</span>
         <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="n">layer1_nodes</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="n">n_inputs</span><span class="p">,),</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">kernel_initializer</span><span class="o">=</span><span class="n">init_param</span><span class="p">),</span>
-<span class="c1">#         keras.layers.Dropout(layer1_dropout),</span>
         <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="n">layer2_nodes</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">,</span> <span class="n">kernel_initializer</span><span class="o">=</span><span class="n">init_param</span><span class="p">),</span>
-<span class="c1">#         keras.layers.Dropout(layer2_dropout),</span>
         <span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="n">n_outputs</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">,</span> <span class="n">kernel_initializer</span><span class="o">=</span><span class="n">init_param</span><span class="p">)</span>
     <span class="p">])</span>
     <span class="n">nn_model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="n">loss_param</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="n">opt_param</span><span class="p">,</span> <span class="n">metrics</span><span class="o">=</span><span class="n">metrics_param</span><span class="p">)</span>
@@ -15519,13 +15537,13 @@ The top 50 words in the vocabulary:
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Accuracy measurement from iteration 1 &gt;&gt;&gt; 76.03%
-Accuracy measurement from iteration 2 &gt;&gt;&gt; 75.84%
-Accuracy measurement from iteration 3 &gt;&gt;&gt; 76.49%
-Accuracy measurement from iteration 4 &gt;&gt;&gt; 76.54%
-Accuracy measurement from iteration 5 &gt;&gt;&gt; 76.35%
-Average model accuracy from all iterations: 76.25% (0.27%)
-Total time for model fitting and cross validating: 0:21:01.258573
+<pre>Accuracy measurement from iteration 1 &gt;&gt;&gt; 76.10%
+Accuracy measurement from iteration 2 &gt;&gt;&gt; 75.18%
+Accuracy measurement from iteration 3 &gt;&gt;&gt; 75.18%
+Accuracy measurement from iteration 4 &gt;&gt;&gt; 75.62%
+Accuracy measurement from iteration 5 &gt;&gt;&gt; 75.36%
+Average model accuracy from all iterations: 75.49% (0.35%)
+Total time for model fitting and cross validating: 0:32:43.298675
 </pre>
 </div>
 </div>
@@ -15600,7 +15618,7 @@ Total time for model fitting and cross validating: 0:21:01.258573
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The shape of the encoded training dataset: (7613, 5760)
+<pre>The shape of the encoded training dataset: (7613, 16977)
 </pre>
 </div>
 </div>
@@ -15653,13 +15671,13 @@ Total time for model fitting and cross validating: 0:21:01.258573
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Accuracy measurement from iteration 1 &gt;&gt;&gt; 75.84%
-Accuracy measurement from iteration 2 &gt;&gt;&gt; 75.25%
-Accuracy measurement from iteration 3 &gt;&gt;&gt; 76.49%
-Accuracy measurement from iteration 4 &gt;&gt;&gt; 76.94%
-Accuracy measurement from iteration 5 &gt;&gt;&gt; 76.15%
-Average model accuracy from all iterations: 76.13% (0.57%)
-Total time for model fitting and cross validating: 0:21:00.472851
+<pre>Accuracy measurement from iteration 1 &gt;&gt;&gt; 75.57%
+Accuracy measurement from iteration 2 &gt;&gt;&gt; 75.51%
+Accuracy measurement from iteration 3 &gt;&gt;&gt; 74.85%
+Accuracy measurement from iteration 4 &gt;&gt;&gt; 75.95%
+Accuracy measurement from iteration 5 &gt;&gt;&gt; 75.23%
+Average model accuracy from all iterations: 75.42% (0.37%)
+Total time for model fitting and cross validating: 0:31:07.032219
 </pre>
 </div>
 </div>
@@ -15701,7 +15719,7 @@ Total time for model fitting and cross validating: 0:21:00.472851
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The shape of the encoded training dataset: (7613, 5760)
+<pre>The shape of the encoded training dataset: (7613, 16977)
 </pre>
 </div>
 </div>
@@ -15754,13 +15772,13 @@ Total time for model fitting and cross validating: 0:21:00.472851
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Accuracy measurement from iteration 1 &gt;&gt;&gt; 75.25%
-Accuracy measurement from iteration 2 &gt;&gt;&gt; 74.85%
-Accuracy measurement from iteration 3 &gt;&gt;&gt; 76.17%
-Accuracy measurement from iteration 4 &gt;&gt;&gt; 76.08%
-Accuracy measurement from iteration 5 &gt;&gt;&gt; 75.30%
-Average model accuracy from all iterations: 75.53% (0.51%)
-Total time for model fitting and cross validating: 0:20:52.667729
+<pre>Accuracy measurement from iteration 1 &gt;&gt;&gt; 75.84%
+Accuracy measurement from iteration 2 &gt;&gt;&gt; 74.52%
+Accuracy measurement from iteration 3 &gt;&gt;&gt; 75.71%
+Accuracy measurement from iteration 4 &gt;&gt;&gt; 75.82%
+Accuracy measurement from iteration 5 &gt;&gt;&gt; 75.49%
+Average model accuracy from all iterations: 75.48% (0.49%)
+Total time for model fitting and cross validating: 0:31:01.316173
 </pre>
 </div>
 </div>
@@ -15802,7 +15820,7 @@ Total time for model fitting and cross validating: 0:20:52.667729
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The shape of the encoded training dataset: (7613, 5760)
+<pre>The shape of the encoded training dataset: (7613, 16977)
 </pre>
 </div>
 </div>
@@ -15855,13 +15873,13 @@ Total time for model fitting and cross validating: 0:20:52.667729
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Accuracy measurement from iteration 1 &gt;&gt;&gt; 75.31%
-Accuracy measurement from iteration 2 &gt;&gt;&gt; 75.64%
-Accuracy measurement from iteration 3 &gt;&gt;&gt; 75.31%
-Accuracy measurement from iteration 4 &gt;&gt;&gt; 76.81%
-Accuracy measurement from iteration 5 &gt;&gt;&gt; 76.54%
-Average model accuracy from all iterations: 75.92% (0.63%)
-Total time for model fitting and cross validating: 0:20:52.956803
+<pre>Accuracy measurement from iteration 1 &gt;&gt;&gt; 74.66%
+Accuracy measurement from iteration 2 &gt;&gt;&gt; 73.67%
+Accuracy measurement from iteration 3 &gt;&gt;&gt; 74.72%
+Accuracy measurement from iteration 4 &gt;&gt;&gt; 75.23%
+Accuracy measurement from iteration 5 &gt;&gt;&gt; 73.06%
+Average model accuracy from all iterations: 74.27% (0.79%)
+Total time for model fitting and cross validating: 0:31:00.808002
 </pre>
 </div>
 </div>
@@ -15938,45 +15956,45 @@ Total time for model fitting and cross validating: 0:20:52.956803
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Epoch 1/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.6163 - accuracy: 0.6598
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.6190 - accuracy: 0.6586
 Epoch 2/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.4365 - accuracy: 0.8254
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.4291 - accuracy: 0.8366
 Epoch 3/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.3642 - accuracy: 0.8496
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.3294 - accuracy: 0.8735
 Epoch 4/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.3307 - accuracy: 0.8619
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.2770 - accuracy: 0.8926
 Epoch 5/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.3073 - accuracy: 0.8718
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.2381 - accuracy: 0.9128
 Epoch 6/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.2882 - accuracy: 0.8798
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.2064 - accuracy: 0.9250
 Epoch 7/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.2726 - accuracy: 0.8898
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.1802 - accuracy: 0.9373
 Epoch 8/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.2596 - accuracy: 0.8916
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.1606 - accuracy: 0.9442
 Epoch 9/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.2464 - accuracy: 0.8983
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.1421 - accuracy: 0.9509
 Epoch 10/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.2353 - accuracy: 0.9048
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.1266 - accuracy: 0.9551
 Epoch 11/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.2252 - accuracy: 0.9088
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.1137 - accuracy: 0.9619
 Epoch 12/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.2143 - accuracy: 0.9129
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.1025 - accuracy: 0.9645
 Epoch 13/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.2040 - accuracy: 0.9161
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.0928 - accuracy: 0.9685
 Epoch 14/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.1930 - accuracy: 0.9220
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.0834 - accuracy: 0.9715
 Epoch 15/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.1851 - accuracy: 0.9266
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.0785 - accuracy: 0.9737
 Epoch 16/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.1750 - accuracy: 0.9292
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.0714 - accuracy: 0.9756
 Epoch 17/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.1657 - accuracy: 0.9343
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.0655 - accuracy: 0.9774
 Epoch 18/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.1558 - accuracy: 0.9392
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.0600 - accuracy: 0.9789
 Epoch 19/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.1485 - accuracy: 0.9425
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.0567 - accuracy: 0.9791
 Epoch 20/20
-7613/7613 [==============================] - 21s 3ms/step - loss: 0.1398 - accuracy: 0.9451
+7613/7613 [==============================] - 30s 4ms/step - loss: 0.0534 - accuracy: 0.9806
 </pre>
 </div>
 </div>
@@ -15990,7 +16008,7 @@ Epoch 20/20
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;tensorflow.python.keras.callbacks.History at 0x7f2017eba550&gt;</pre>
+<pre>&lt;tensorflow.python.keras.callbacks.History at 0x7fa79641b4f0&gt;</pre>
 </div>
 
 </div>
@@ -16030,14 +16048,14 @@ Epoch 20/20
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
-dense_60 (Dense)             (None, 64)                368704    
+dense_60 (Dense)             (None, 64)                1086592   
 _________________________________________________________________
 dense_61 (Dense)             (None, 32)                2080      
 _________________________________________________________________
 dense_62 (Dense)             (None, 1)                 33        
 =================================================================
-Total params: 370,817
-Trainable params: 370,817
+Total params: 1,088,705
+Trainable params: 1,088,705
 Non-trainable params: 0
 _________________________________________________________________
 </pre>
@@ -16198,7 +16216,7 @@ Name: text, dtype: object
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
@@ -16206,11 +16224,33 @@ Name: text, dtype: object
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load all test/validation cases</span>
 <span class="n">test_docs</span> <span class="o">=</span> <span class="n">process_comments_to_lines</span><span class="p">(</span><span class="n">X_test_df</span><span class="p">,</span> <span class="n">vocab</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number of comments processed:&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">test_docs</span><span class="p">))</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Number of comments processed: 3263
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -16241,7 +16281,7 @@ Name: text, dtype: object
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>The shape of the encoded test dataset: (3263, 5760)
+<pre>The shape of the encoded test dataset: (3263, 16977)
 </pre>
 </div>
 </div>
@@ -16284,7 +16324,7 @@ Name: text, dtype: object
 y_submission_kaggle.shape: (3263, 2)
    id  target
 0   0       1
-1   2       1
+1   2       0
 2   3       1
 3   9       1
 4  11       1
@@ -16326,7 +16366,7 @@ y_submission_kaggle.shape: (3263, 2)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Completed writing output file: submission_20210209-0226.csv
+<pre>Completed writing output file: submission_20210210-0522.csv
 </pre>
 </div>
 </div>
@@ -16375,7 +16415,7 @@ y_submission_kaggle.shape: (3263, 2)
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Total time for the script: 1:31:13.421171
+<pre>Total time for the script: 2:16:26.406983
 </pre>
 </div>
 </div>
